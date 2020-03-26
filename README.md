@@ -1,5 +1,5 @@
-#*MARENGO SIMONE*
-1. **CONSEGNA 1
+#*MARENGO SIMONE*#
+1. **CONSEGNA 1**
   1. JS - Ese 17 _styles
   
 Nell'esercizio 17 l'obiettivo era conoscere i metodi per utilizzare i CSS da codice JavaScript. Dopo una serie di tentativi per
