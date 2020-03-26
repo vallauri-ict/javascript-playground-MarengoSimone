@@ -1,6 +1,6 @@
-*MARENGO SIMONE - 3^B INFO 
+*MARENGO SIMONE - 3^B INFO *
 1. **CONSEGNA 1**
-  1.JS - Ese 17 _styles 
+    JS - Ese 17 _styles 
   
 Nell'esercizio 17 l'obiettivo era conoscere i metodi per utilizzare i CSS da codice JavaScript. Dopo una serie di tentativi per
 prendere confidenza con i vari comandi ho deciso di utilizzare per ciascun punto dell'esercizio la proprietà .style. Ad ogni 
