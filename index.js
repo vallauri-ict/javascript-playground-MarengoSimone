@@ -1,61 +1,160 @@
 "use strict"
 
-let _titolo, _txtSize, _body, _divImmagine, _btnImg1, _btnImg2, _btnImg3;
+let _txtDisplay;
+let primo=0;
+let secondo=0;
+let risultato;
+let operazione;
+let operatorePremuto=false;//serve per non scrivere 2 operarori
+let potenza=0;
+let bloccoNumero=false;//serve dopo avere premuto =. la consegna dice che dopo aver calcolato si deve per forza andare a cliccare un operando
+
 
 window.onload=function(){
-	_titolo=document.getElementById("titolo");
-	_txtSize=document.getElementById("txtSize");
-	_body=document.getElementsByTagName("body")[0];
-	_divImmagine=document.getElementById("imgBox");
-	_btnImg1=document.getElementById("btnImg1");
-	_btnImg2=document.getElementById("btnImg2");
-	_btnImg3=document.getElementById("btnImg3");
-	_txtSize.value="";
+	_txtDisplay=document.getElementById("txtDisplay");
+	_txtDisplay.value="";
+	
 }
 
-function cambiacolore(){
-	if(_titolo.style.backgroundColor == "blue")
+function resetta(){
+	_txtDisplay.value="";
+	operazione="";
+    operatorePremuto=false;
+    potenza=0;
+    bloccoNumero=false;
+
+}
+
+function visualizza(value){//primo e secondo li caricherò quando premerò = (anche corretto il tuo metodo non poteva funzionare perchè se si cliccava . non andava)
+	if(bloccoNumero==false)
 	{
-		_titolo.style.backgroundColor = "yellow";
-		_titolo.style.color= "blue";
+
+		 _txtDisplay.value+=value;
+
+
+	}
+
+}
+
+function operatore(value){
+	if(operatorePremuto==false)
+	{
+		operazione=value;
+		console.log(operazione);
+		_txtDisplay.value+=operazione;
+		operatorePremuto=true;
+		potenza=0;
+		bloccoNumero=false;
+	}
+
+}
+
+function calcola(){
+	let vet;
+	switch(operazione)
+	{
+		case '+':
+            vet= _txtDisplay.value.split("+");//splito la stringa di _txtDisplay
+            primo=vet[0];
+            secondo=vet[1];
+			risultato=parseFloat(primo)+parseFloat(secondo);//se non si mette parseFloat rischi che primo e secondo vengano visti come 2 stringhe
+			break;
+		case '-':
+            vet= _txtDisplay.value.split("-");
+            primo=vet[0];
+            secondo=vet[1];
+            risultato=parseFloat(primo)-parseFloat(secondo);
+			break;
+		case '*':
+            vet= _txtDisplay.value.split("*");
+            primo=vet[0];
+            secondo=vet[1];
+            risultato=parseFloat(primo)*parseFloat(secondo);
+			break;
+		case '/':
+            vet= _txtDisplay.value.split("/");
+            primo=vet[0];
+            secondo=vet[1];
+            risultato=parseFloat(primo)/parseFloat(secondo);
+			break;
+	}
+	_txtDisplay.value="";
+	_txtDisplay.value=risultato;
+	operatorePremuto=false;
+	bloccoNumero=true;
+		
+}gh
+/*"use strict"
+
+let _txtDisplay;
+let _btnNum, _btnOperatore;
+let primo=0;
+let secondo=0;
+let operazione;
+let risultato=0;
+let cont=0;
+
+
+window.onload=function(){
+	_txtDisplay=document.getElementById("txtDisplay");
+	_btnOperatore=document.getElementsByName("btnOperatore");
+	_btnNum=document.getElementsByName("btnNum");
+	_txtDisplay.value="";
+	
+}
+
+function resetta(){
+	_txtDisplay.value="";
+	primo=0;
+	operazione="";
+}
+
+function visualizza(value){
+	cont++;
+	if(cont==1)
+	{
+		primo=value;
+		console.log(primo);
+		_txtDisplay.value+=primo;
 	}
 	else
 	{
-		_titolo.style.backgroundColor = "blue";
-		_titolo.style.color= "yellow";
+		secondo=value;
+		console.log(secondo);
+		_txtDisplay.value+=secondo;
 	}
 }
 
-function dimensione(){
-	let font= _txtSize.value;
-	_titolo.style.fontSize = font+"pt";
+function operatore(value){
+	operazione=value;
+	console.log(operazione);
+	_txtDisplay.value+=operazione;
 }
 
-function sfondo(){
-	if(_body.style.background=="")
+function calcola(){
+	
+	switch(operazione)
 	{
-		_body.style.background="#eaeaea url(bg.gif) center repeat-y";
+		case '+':
+			risultato=primo+secondo;
+			break;
+		case '-':
+			risultato=primo-secondo;
+			break;
+		case '*':
+			risultato=primo*secondo;
+			break;
+		case '/':
+			risultato=primo/secondo;
+			break;
 	}
-	else
-		_body.style.background="";
-}
+	_txtDisplay.value="";
+	_txtDisplay.value=risultato;
+	primo=risultato;
+	secondo=0;
+		
+}*/
 
-function bordo(){
-	if(_titolo.style.border == "2px solid red")
-	{
-		_titolo.style.border= "2px solid white";
-	}
-	else
-		_titolo.style.border= "2px solid red";
-}
-
-function immagini(){
-	_divImmagine.style.background="url(img/img1.jpg)";
-}
-
-function pulisci(){
-	_divImmagine.style.visibility= "hidden";
-}
 
 function generaNumero(min,max){
 	let n= Math.floor((max-min+1)*Math.random()+min) /*x generare un numero tra min e max estremi inlcusi */
