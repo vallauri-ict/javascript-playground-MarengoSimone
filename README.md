@@ -7,5 +7,10 @@ prendere confidenza con i vari comandi ho deciso di utilizzare per ciascun punto
 puntatore, quindi, segue  .style.(proprietà CSS necessaria). I bottoni Cambia colore e cambia bordo funzionano ma al primo click
 non succede nulla. Per quanto riguarda le 3 immagini da inserire nel box ho utilizzato un passaggio di parametri ma attualmente non
 funziona.
+
+1. > **LEZIONE 2**
+     1. > *Consegna JS - Ese 19 Calcolatrice* 
+  
+Nell'esercizio 19 l'obiettivo era programmare una calcolatrice classica con i bottoni dei numeri, delle operazioni e il tasto per cancellare la sua memoria. L'esercizio è funzionante.
   
 
