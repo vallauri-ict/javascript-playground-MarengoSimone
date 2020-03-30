@@ -1,0 +1,33 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	height:100%;
+	background-color:dodgerblue;
+}
+html{
+	height:100%;
+}
+#wrapper{
+	width:780px;
+	border:1px solid black;
+	height:100%;
+	margin:30px auto;
+	background-color:white;
+	box-shadow:0 0 20px 7px black;
+	text-align:center;
+}
+#imgRoll,#imgBox{
+	background-size:contain;
+	background-repeat:no-repeat;
+	min-height:230px;
+	width:350px;
+	margin: 10px auto;
+}
+#wrapper h1{
+	text-align:center;
+}
+/*#wrapper *{
+	margin:6px; /*tutto quello che c'è nel wrapper ha spaziatura 6px;*/
+}
