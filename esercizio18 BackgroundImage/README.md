@@ -1,4 +1,4 @@
-2. > **LEZIONE 3**
+3. > **LEZIONE 3**
      1. > *Consegna JS - Ese 18 BackgroundImage*
      
 L'obiettivo era all’avvio caricare all’interno dei due tag DIV denominati imgBox e imgRoll la stessa immagine1.jpg.
