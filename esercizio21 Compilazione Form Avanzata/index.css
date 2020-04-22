@@ -1,0 +1,56 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	height:100%;
+	background-color:dodgerblue;
+}
+html{
+	height:100%;
+}
+h3,.buttons{
+	text-align:center;
+}
+input,select,textarea{
+	min-height:30px;
+	max-height:200px;
+	margin:10px auto;
+}
+select{
+	width:100px;
+	text-align:center;
+}
+textarea{
+	width:300px;
+	height:200px;
+}
+input{
+	border:none;
+	border-bottom:1px solid lightgreen;
+}
+.buttons > input{
+	margin-top:30px;
+	box-sizing:content-box;
+	font-size:larger;
+	border:2px solid lightgray;
+}
+#wrapper{
+	width:780px;
+	border:1px solid black;
+	height:100%;
+	margin:30px auto;
+	background-color:white;
+	box-shadow:0 0 20px 7px black;
+	text-align:left;
+	padding:30px;
+}
+.red-border{
+	border-bottom:1px solid red;
+}
+/*#wrapper h1{
+	text-align:center;
+}*/
+#wrapper *{
+	margin:6px; /*tutto quello che c'è nel wrapper ha spaziatura 6px;*/
+}
