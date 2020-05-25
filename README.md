@@ -1,6 +1,6 @@
 *MARENGO SIMONE - 3^B INFO*
   1. > **INTRODUZIONE**
-     1. > *Consegne JavaScript*
+     1. > *Consegne JavaScript e Bootstrap*
      
  Repository di Marengo Simone, classe 3^B Informatica. In questa apposita repository del vallauri ogni lavoro svolto a casa viene
  caricato sulla piattaforma per mantenerci aggiornati.
