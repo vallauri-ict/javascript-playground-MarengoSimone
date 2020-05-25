@@ -1,4 +1,4 @@
-5. > **LEZIONE 9**
+9. > **LEZIONE 9**
      1. > *Consegna JS - Ese 26 Set timeout/ Gioco del 7 1⁄2*
      
 E' stato realizzato il gioco di carte 7 1⁄2 utilizzando una nuova funzione analizzata: setTimeout. Permette di richiamare una 
