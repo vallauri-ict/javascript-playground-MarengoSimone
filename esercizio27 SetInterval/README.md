@@ -1,4 +1,4 @@
-5. > **LEZIONE 9**
+5. > **LEZIONE 10**
      1. > *Consegna JS - Ese 27 Set Interval*
      
 E' stata utilizzata una nuova funzione di JavaScript: setInterval. Permette di eseguire una funzione all'infinito con un ritardo
