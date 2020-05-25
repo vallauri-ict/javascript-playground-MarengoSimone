@@ -1,4 +1,4 @@
-5. > **LEZIONE 8**
+8. > **LEZIONE 8**
      1. > *Consegna JS - Ese 25 Captcha*
      
 All'avvio il programma genera 5 caratteri (lettere o numeri) casuali presi dall'img captcha. Sull'onChange del campo user si deve
